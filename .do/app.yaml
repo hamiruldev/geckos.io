@@ -1,0 +1,13 @@
+name: geckos.io
+services:
+- environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: hamiruldev/geckos.io
+  http_port: 1444
+  name: geckos.io
+  routes:
+  - path: /
+  run_command: npm run start
+  source_dir: /
